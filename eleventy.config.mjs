@@ -37,7 +37,7 @@ export default function (eleventyConfig) {
 
     return {
         dir: {
-            output: "_sites"
+            output: "_site"
         }
     };
 
