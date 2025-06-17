@@ -5,7 +5,7 @@
   "type": "commonjs",
   "scripts": {
     "start": "npx @11ty/eleventy --serve",
-    "build": "npm @11ty/eleventy",
+    "build": "tinacms build && npm @11ty/eleventy",
     "dev": "tinacms dev -c \"npx @11ty/eleventy --serve\"",
     "testing": "npx tinacms dev -c | npx @11ty/eleventy --serve"
   },
