@@ -1,0 +1,16 @@
+:root {
+    color-scheme: light dark;
+}
+
+body {
+    color: light-dark(#333b3c, #efefec);
+    background-color: light-dark(ghostwhite, black);
+}
+
+main {
+    width: calc( 100% - 10rem );
+    margin: 0 auto;
+}
+svg {
+    fill: light-dark(black, ghostwhite);;
+}

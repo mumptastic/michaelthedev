@@ -1,0 +1,23 @@
+{
+  "name": "michaelthe.dev",
+  "version": "1.0",
+  "description": "Personal website for Michael Nichols. Built with 11ty",
+  "type": "commonjs",
+  "scripts": {
+    "start": "npx @11ty/eleventy --serve",
+    "build": "npm @11ty/eleventy",
+    "dev": "tinacms dev -c \"npx @11ty/eleventy --serve\"",
+    "testing": "npx tinacms dev -c | npx @11ty/eleventy --serve"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@11ty/eleventy": "^3.1.1",
+    "@11ty/eleventy-plugin-rss": "^2.0.4",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.1",
+    "tinacms": "^2.7.8"
+  },
+  "devDependencies": {
+    "@tinacms/cli": "^1.9.8",
+    "luxon": "^3.6.1"
+  }
+}

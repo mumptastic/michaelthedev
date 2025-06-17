@@ -1,0 +1,26 @@
+---
+layout: layout.html
+title: Notes
+pagination:
+    data: collections.sortedNotes
+    size: 4
+    alias: notes
+---
+
+
+{% for note in notes %}
+<div class="testing">
+    <h2>
+        <a href="{{ note.url }}">
+            {{ note.data.title }}
+        </a>
+    </h2>
+    <span>{{ note.data.dateString }}</span>
+</div>
+{% endfor %}
+
+
+
+{% if pagination.href.previous %}<a href="{{ pagination.href.previous }}">Previous page</a>{% endif %}
+|
+{% if pagination.href.next %}<a href="{{ pagination.href.next }}">Next page</a>{% endif %}

@@ -1,2 +1,0 @@
-# michaelthedev
-new personal site!
