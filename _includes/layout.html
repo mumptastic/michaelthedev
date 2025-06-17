@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="generator" content="{{ eleventy.generator }}" >
+    <title>{{title | default: "Hello World" }} | Michael The Developer</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet" />
+</head>
+<body>
+
+
+{% include "_header.html" %}
+
+<h1>{{ title | default: "Hello World!"}}</h1>
+
+
+
+<main>
+    {{ content }}
+</main>
+</body>
+</html>

@@ -1,0 +1,12 @@
+---
+layout: layout.html
+---
+
+{% for note in collections.sortedNotes  limit: 3 %}
+<div class="testing">
+    <a href="{{ note.url }}">
+        <h2>{{ note.data.title }}</h2>
+    </a>
+    <span>{{ note.data.dateString }}</span>
+</div>
+{% endfor %}
