@@ -4,6 +4,7 @@ import  syntaxHighlight  from "@11ty/eleventy-plugin-syntaxhighlight";
 
 export default function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy("assets/**/*");
+    eleventyConfig.addPassthroughCopy("admin/**/*");
 
     eleventyConfig.addCollection("sortedNotes", function(collectionApi) {
         return collectionApi.getFilteredByTag("note")
@@ -34,6 +35,11 @@ export default function (eleventyConfig) {
         }
     });
 
+    return {
+        dir: {
+            output: "_sites"
+        }
+    };
 
 };
 

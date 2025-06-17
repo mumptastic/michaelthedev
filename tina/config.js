@@ -17,12 +17,12 @@ export default defineConfig({
 
   build: {
     outputFolder: "admin",
-    publicFolder: "_site",
+    publicFolder: "_sites",  // Update this line
   },
   media: {
     tina: {
       mediaRoot: "",
-      publicFolder: "_site",
+      publicFolder: "_sites",  // And this line
     },
   },
   // See docs on content modeling for more info on how to setup new content models: https://tina.io/docs/schema/
@@ -64,7 +64,3 @@ export default defineConfig({
     ]
   }
 });
-
-
-
-
