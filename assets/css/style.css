@@ -1,16 +1,59 @@
 :root {
-    color-scheme: light dark;
+    --background: ghostwhite;
+    --max-width: 1440px;
 }
 
-body {
-    color: light-dark(#333b3c, #efefec);
-    background-color: light-dark(ghostwhite, black);
+html, body {
+    background-color: var(--background);
+    font-family: system-ui;
 }
 
-main {
-    width: calc( 100% - 10rem );
+.header {
+    font-size: 1.5rem;
+    display: flex;
+    width: var(--max-width);
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+
+    .lockup {
+        padding: 0.5rem;
+    }
+
+    .primary-nav {
+        text-align: right;
+        ul {
+            list-style: none;
+            li {
+                display: inline-block;
+                padding: 0.5rem;
+            }
+        }
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+
+        &.active {
+            text-decoration: underline;
+        }
+    }
+}
+
+
+.container {
+    width: var(--max-width);
     margin: 0 auto;
 }
-svg {
-    fill: light-dark(black, ghostwhite);;
-}
+
+h1 { font-size: 5em; }
+
+/*main {*/
+/*    display: grid;*/
+/*    width: calc( 80vw - 10rem );*/
+/*}*/
+/*svg {*/
+/*    fill: light-dark(black, ghostwhite);;*/
+/*}*/

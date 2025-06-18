@@ -10,14 +10,11 @@
 </head>
 <body>
 
-
 {% include "_header.html" %}
 
-<h1>{{ title | default: "Hello World!"}}</h1>
 
-
-
-<main>
+<main class="container">
+    <h1>{{ title | default: "Howdy, Y'all"}}</h1>
     {{ content }}
 </main>
 </body>

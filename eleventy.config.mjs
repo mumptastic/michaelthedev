@@ -4,7 +4,6 @@ import  syntaxHighlight  from "@11ty/eleventy-plugin-syntaxhighlight";
 
 export default function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy("assets/**/*");
-    eleventyConfig.addPassthroughCopy("admin/**/*");
 
     eleventyConfig.addCollection("sortedNotes", function(collectionApi) {
         return collectionApi.getFilteredByTag("note")
@@ -13,7 +12,6 @@ export default function (eleventyConfig) {
             return new Date(b.data.date) - new Date(a.data.date);
         });
     });
-
 
     eleventyConfig.addPlugin(syntaxHighlight);
     eleventyConfig.addPlugin(feedPlugin, {
